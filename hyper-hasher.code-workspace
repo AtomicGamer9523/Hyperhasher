@@ -1,0 +1,93 @@
+//AUTHOR: "AtomicGamer9523"@github.com
+//FORMAT: "JSON"
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "better-comments.tags": [
+            {
+                "tag": "FORMAT:",
+                "color": "#006767",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": true,
+                "italic": false
+            },
+            {
+                "tag": "AUTHOR:",
+                "color": "#007d64",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": true,
+                "italic": false
+            },
+            {
+                "tag": "!",
+                "color": "#FF2D00",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": true,
+                "italic": false
+            },
+            {
+                "tag": "?",
+                "color": "#3498DB",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": false,
+                "italic": false
+            },
+            {
+                "tag": "//",
+                "color": "#474747",
+                "strikethrough": true,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": false,
+                "italic": false
+            },
+            {
+                "tag": "todo",
+                "color": "#FF8C00",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": false,
+                "italic": false
+            },
+            {
+                "tag": "*",
+                "color": "#98C379",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": false,
+                "italic": false
+            }
+        ],
+        "vsicons.associations.files": [
+            {
+                "icon": "hash",
+                "extensions": [
+                    "hash",
+                    ".hash"
+                ],
+                "format": "svg",
+                "filename": true, 
+                "filenamesGlob": [
+                    "hash",
+                    ".hash"
+                ],
+                "extensionsGlob": ["production", "local"],
+                "light":false
+            }
+        ]
+    }
+}
