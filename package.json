@@ -1,0 +1,20 @@
+{
+  "name": "hyperhasher",
+  "version": "0.1.1",
+  "description": "A Simple BlockChain Library for rust and js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomicGamer9523/Hyperhasher.git"
+  },
+  "keywords": ["blockchain","api","hash"],
+  "author": "atomic__gamer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AtomicGamer9523/Hyperhasher/issues"
+  },
+  "homepage": "https://github.com/AtomicGamer9523/Hyperhasher#readme",
+
+
+  "main": "./src/lib.js",
+  "types": "./src/lib.d.ts"
+}

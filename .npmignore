@@ -1,0 +1,10 @@
+/.git
+/.vscode
+/target
+
+*.rs
+*.toml
+*.lock
+
+hyper-hasher.code-workspace
+manifest
