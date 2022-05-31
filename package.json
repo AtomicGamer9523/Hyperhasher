@@ -1,6 +1,6 @@
 {
   "name": "hyperhasher",
-  "version": "0.1.1",
+  "version": "0.1.11",
   "description": "A Simple BlockChain Library for rust and js",
   "repository": {
     "type": "git",
