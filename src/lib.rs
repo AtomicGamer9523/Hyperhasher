@@ -141,7 +141,7 @@ fn blake2_hash_test() {
 
 #[test]
 fn simple_chain_test() {
-    let mut chain = Chain::new();
+    let mut chain = Chain::new(String::from(""));
     let block = Block::new(String::from("test"),&chain);
     chain.push(block);
     assert_eq!(chain.hash, HashString::from_generic_array(EXPECTED_SIMPLE_CHAIN_RESULT));
