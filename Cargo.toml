@@ -1,11 +1,12 @@
 #AUTHOR: "AtomicGamer9523"@github.com
-#FORMAT: "RON"
+#LICENSE: "Creative Commons CC0 1.0"
+#FORMAT: "TOML"
 [package]
 name = "hyperhasher"
 version = "0.1.0"
 edition = "2018"
+license = "Creative Commons CC0 1.0"
 
 [dependencies]
-ron = "0.7.0"
 chrono = "0.4"
-serde = "1.0.137"
+blake2 = "0.10.4"

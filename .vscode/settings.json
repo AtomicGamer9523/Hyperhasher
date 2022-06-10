@@ -1,3 +1,6 @@
+//AUTHOR: "AtomicGamer9523"@github.com
+//LICENSE: "Creative Commons CC0 1.0"
+//FORMAT: "JSON"
 {
     "better-comments.tags": [
         {
@@ -12,6 +15,15 @@
         {
             "tag": "AUTHOR:",
             "color": "#007d64",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": true,
+            "italic": false
+        },
+        {
+            "tag": "LICENSE:",
+            "color": "#006739",
             "strikethrough": false,
             "underline": false,
             "backgroundColor": "transparent",

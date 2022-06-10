@@ -1,17 +1,8 @@
+#AUTHOR: "AtomicGamer9523"@github.com
+#LICENSE: "Creative Commons CC0 1.0"
+#FORMAT: "IGNORE FILE"
+
+
+/node_modules
 /target
 Cargo.lock
-
-# Added by cargo
-#
-# already existing elements were commented out
-
-#/target
-/Cargo.lock
-
-
-# Added by cargo
-#
-# already existing elements were commented out
-
-#/target
-#/Cargo.lock

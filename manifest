@@ -1,8 +1,0 @@
-//AUTHOR: "AtomicGamer9523"@github.com
-//FORMAT: "RON"
-Config(
-    initialblockdata: "INITIAL_BLOCK",
-    autoloadsavedhash: true,
-    usedotlogfile: true,
-    debugmode: true
-)
