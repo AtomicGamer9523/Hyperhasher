@@ -14,6 +14,12 @@ repository = "https://github.com/AtomicGamer9523/Hyperhasher"
 categories = ["cryptography", "cryptography::cryptocurrencies"]
 documentation = "https://github.com/AtomicGamer9523/Hyperhasher/blob/main/docs/index.md"
 
+# To Exclude JS files
+include = [
+    "**/*.rs",
+    "Cargo.toml"
+]
+
 [dependencies]
 chrono = "0.4"
 blake2 = "0.10.4"
