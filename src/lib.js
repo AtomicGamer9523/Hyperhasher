@@ -1,5 +1,5 @@
 //AUTHOR: "AtomicGamer9523"@github.com
-//LICENSE: "Creative Commons CC0 1.0"
+//LICENSE: "MIT"
 //FORMAT: "JS"
 const blake2 = require('./blake2b');
 

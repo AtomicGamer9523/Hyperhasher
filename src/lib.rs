@@ -1,5 +1,5 @@
 //AUTHOR: "AtomicGamer9523"@github.com
-//LICENSE: "Creative Commons CC0 1.0"
+//LICENSE: "MIT"
 //FORMAT: "RUST"
 use std::fmt::{Display,Formatter,Result};
 #[allow(unused_imports)]

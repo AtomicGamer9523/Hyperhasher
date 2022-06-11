@@ -1,5 +1,5 @@
 //AUTHOR: "dcposch"@github.com
-//LICENSE: "Creative Commons CC0 1.0"
+//LICENSE: "MIT"
 //FORMAT: "JS"
 const util = {
     normalizeInput: function (input) {

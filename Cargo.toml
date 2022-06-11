@@ -1,5 +1,5 @@
 #AUTHOR: "AtomicGamer9523"@github.com
-#LICENSE: "Creative Commons CC0 1.0"
+#LICENSE: "MIT"
 #FORMAT: "TOML"
 [package]
 edition = "2018"
@@ -7,7 +7,7 @@ version = "0.1.0"
 readme = "README.md"
 name = "hyperhasher"
 keywords = ["blockchain", "light"]
-license = "Creative Commons CC0 1.0"
+license = "MIT"
 description = "A VERY light blockchain library"
 homepage = "https://github.com/AtomicGamer9523/Hyperhasher"
 repository = "https://github.com/AtomicGamer9523/Hyperhasher"
