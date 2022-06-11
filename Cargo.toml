@@ -2,13 +2,17 @@
 #LICENSE: "Creative Commons CC0 1.0"
 #FORMAT: "TOML"
 [package]
+edition = "2018"
+version = "0.1.0"
+readme = "README.md"
 name = "hyperhasher"
+keywords = ["blockchain", "light"]
+license = "Creative Commons CC0 1.0"
 description = "A VERY light blockchain library"
 homepage = "https://github.com/AtomicGamer9523/Hyperhasher"
-documentation = ""
-version = "0.1.0"
-edition = "2018"
-license = "Creative Commons CC0 1.0"
+repository = "https://github.com/AtomicGamer9523/Hyperhasher"
+categories = ["cryptography", "cryptography::cryptocurrencies"]
+documentation = "https://github.com/AtomicGamer9523/Hyperhasher/blob/main/docs/index.md"
 
 [dependencies]
 chrono = "0.4"
