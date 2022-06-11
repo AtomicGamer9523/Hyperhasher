@@ -3,6 +3,9 @@
 #FORMAT: "TOML"
 [package]
 name = "hyperhasher"
+description = "A VERY light blockchain library"
+homepage = "https://github.com/AtomicGamer9523/Hyperhasher"
+documentation = ""
 version = "0.1.0"
 edition = "2018"
 license = "Creative Commons CC0 1.0"
