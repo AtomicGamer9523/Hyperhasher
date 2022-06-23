@@ -1,6 +1,6 @@
 //AUTHOR: "AtomicGamer9523"@github.com
 //LICENSE: "MIT"
-//FORMAT: "DECLAREATIVE TS"
+//FORMAT: "DTS"
 import * as blake2 from './blake2b';
 
 
