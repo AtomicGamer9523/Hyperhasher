@@ -1,7 +1,7 @@
 //AUTHOR: "AtomicGamer9523"@github.com
 //LICENSE: "MIT"
 //FORMAT: "DTS"
-import * as blake2 from './blake2b';
+import * as blake2 from './blake2';
 
 
 class Block {

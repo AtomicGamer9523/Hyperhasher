@@ -19,5 +19,10 @@
   "types": "./src/lib.d.ts",
   "devDependencies": {
     "@types/node": "^17.0.38"
+  },
+
+
+  "scripts": {
+    "test": "node ./src/main.test.js"
   }
 }

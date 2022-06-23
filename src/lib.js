@@ -1,8 +1,7 @@
 //AUTHOR: "AtomicGamer9523"@github.com
 //LICENSE: "MIT"
 //FORMAT: "JS"
-const blake2 = require('./blake2b');
-
+const blake2 = require('./blake2');
 
 class Block {
     previos_hash;
@@ -19,10 +18,10 @@ class Block {
 class Chain {
     hash;
     constructor(initial_block_data){
-        this.hash = blake2.blake2b(Block._initial(initial_block_data));
+        this.hash = blake2(Block._initial(initial_block_data));
     }
     push(block){
-        this.hash = blake2.blake2b(block)
+        this.hash = blake2(block)
     }
 }
 
