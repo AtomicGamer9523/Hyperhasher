@@ -24,19 +24,18 @@
     html_logo_url = "https://raw.githubusercontent.com/RustCrypto/media/6ee8e381/logo.svg",
     html_favicon_url = "https://raw.githubusercontent.com/RustCrypto/media/6ee8e381/logo.svg"
 )]
-
-
-
-
-
+mod macros;
 mod consts;
+mod blockchain;
+
+
+
 #[allow(unused_imports)]
 use consts::{
     EXPECTED_SIMPLE_CHAIN_RESULT,
     INITIAL_BLOCK_PREVIOS_HASH,
     EXPECTED_HASH_RESULT
 };
-mod blockchain;
 pub use blockchain::{
     HashString,
     Block,

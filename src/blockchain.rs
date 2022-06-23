@@ -44,34 +44,6 @@ impl Default for HashString {
 
 
 
-
-
-
-
-
-#[macro_export]
-macro_rules! hash {
-    ( $e: expr ) => {{
-        use blake2::{Digest, Blake2b512};
-        use std::convert::TryInto;
-        let mut hasher = Blake2b512::new();
-        hasher.update(
-            format!(
-                "{}",
-                $e
-            )
-            .as_bytes()
-        );
-        let hashres: [u8;64] = hasher.finalize()
-        .as_slice().try_into().expect("Wrong Length");
-        HashString::from_generic_array(hashres)
-    }};
-}
-
-
-
-
-
 #[derive(Debug, Clone, Copy, Eq, PartialEq, Ord, PartialOrd, Hash)]
 pub struct Block <T: Copy + Display> {
     pub previos_hash: HashString,
@@ -113,11 +85,11 @@ pub struct Chain {
 impl Chain {
     pub fn new<T: Copy + Display>(initial_block_data: T) -> Self {
         Self {
-            hash: hash!(Block::initial(initial_block_data))
+            hash: crate::hash!(Block::initial(initial_block_data))
         }
     }
     pub fn push<T: Copy + Display>(&mut self, block: Block<T>) -> HashString {
-        self.hash = hash!(block);
+        self.hash = crate::hash!(block);
         self.hash
     }
 }
