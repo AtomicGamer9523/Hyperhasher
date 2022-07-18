@@ -1,52 +1,20 @@
 //AUTHOR: "AtomicGamer9523"@github.com
 //LICENSE: "MIT"
 //FORMAT: "RUST"
-use crate::consts::INITIAL_BLOCK_PREVIOS_HASH;
 use std::fmt::{
     Formatter,
     Display,
     Result
 };
+pub use blake3::Hash;
 pub const IBD: &'static str = "INITIAL.BLOCK.DATA";
 
 
 
 
-
-#[derive(PartialEq, Eq, PartialOrd, Ord, Copy, Clone, Hash, Debug)]
-pub struct HashString {
-    strng: [u8;64]
-}
-impl HashString {
-    pub(crate) fn from_generic_array(strng: [u8;64]) -> HashString { HashString {strng}}
-    pub fn to_str(&self) -> String {
-        hex::encode(self.strng)
-    }
-}
-impl Display for HashString {
-    fn fmt(&self, f:&mut Formatter ) -> Result {
-        write!(
-            f,
-            "{}",
-            hex::encode(self.strng)
-        )
-    }
-}
-impl Default for HashString {
-    fn default() -> Self {
-        Self {
-            strng: INITIAL_BLOCK_PREVIOS_HASH
-        }
-    }
-}
-
-
-
-
-
-#[derive(Debug, Clone, Copy, Eq, PartialEq, Ord, PartialOrd, Hash)]
+#[derive(Debug, Clone, Copy, Eq, PartialEq, Hash)]
 pub struct Block <T: Copy + Display> {
-    pub previos_hash: HashString,
+    pub previos_hash: Hash,
     pub data: T
 }
 impl<T: Copy + Display> Display for Block<T> {
@@ -68,7 +36,7 @@ impl<T: Copy + Display> Block<T> {
     }
     pub(crate) fn initial(data: T) -> Block<T> {
         Block {
-            previos_hash: HashString::default(),
+            previos_hash: Hash::from(crate::consts::INITIAL_BLOCK_PREVIOS_HASH),
             data
         }
     }
@@ -78,9 +46,9 @@ impl<T: Copy + Display> Block<T> {
 
 
 
-#[derive(Debug, Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash)]
+#[derive(Debug, Copy, Clone, Eq, PartialEq, Hash)]
 pub struct Chain {
-    pub hash: HashString
+    pub hash: Hash
 }
 impl Chain {
     pub fn new<T: Copy + Display>(initial_block_data: T) -> Self {
@@ -88,7 +56,7 @@ impl Chain {
             hash: crate::hash!(Block::initial(initial_block_data))
         }
     }
-    pub fn push<T: Copy + Display>(&mut self, block: Block<T>) -> HashString {
+    pub fn push<T: Copy + Display>(&mut self, block: Block<T>) -> Hash {
         self.hash = crate::hash!(block);
         self.hash
     }

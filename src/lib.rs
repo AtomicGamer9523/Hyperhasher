@@ -6,13 +6,19 @@
 //! # Usage:
 //!
 //! ```rust
-//! use hyperhasher::{Block, Chain};
+//! use hyperhasher::{
+//!     HashString,
+//!     Block,
+//!     Chain,
+//!     IBD
+//! };
 //!
 //! fn main(){
-//! let mut chain = Chain::new(IBD);
-//! let block = Block::new("test", &chain);
-//! chain.push(block);
-//! assert_eq!(chain.hash, HashString::from_generic_array(EXPECTED_SIMPLE_CHAIN_RESULT));
+//!     //Craeting A New Chain
+//!     let mut chain = Chain::new(IBD);
+//!     let block = Block::new("test", &chain);
+//!     chain.push(block);
+//!     println!("{}", chain.hash);
 //! }
 //! ```
 //!
@@ -31,35 +37,11 @@ mod blockchain;
 
 
 #[allow(unused_imports)]
-use consts::{
-    EXPECTED_SIMPLE_CHAIN_RESULT,
-    INITIAL_BLOCK_PREVIOS_HASH,
-    EXPECTED_HASH_RESULT
-};
 pub use blockchain::{
-    HashString,
     Block,
     Chain,
     IBD
 };
 pub use hex;
 pub use chrono;
-pub use blake2;
-
-
-
-
-
-#[test]
-fn blake2_hash_test() {
-    let hash = hash!("");
-    assert_eq!(hash, HashString::from_generic_array(EXPECTED_HASH_RESULT));
-}
-
-#[test]
-fn simple_chain_test() {
-    let mut chain = Chain::new(IBD);
-    let block = Block::new("test", &chain);
-    chain.push(block);
-    assert_eq!(chain.hash, HashString::from_generic_array(EXPECTED_SIMPLE_CHAIN_RESULT));
-}
+pub use blake3;

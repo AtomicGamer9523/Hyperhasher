@@ -4,9 +4,8 @@
 #[macro_export]
 macro_rules! hash {
     ( $e: expr ) => {{
-        use blake2::{Digest, Blake2b512};
-        use std::convert::TryInto;
-        let mut hasher = Blake2b512::new();
+        use blake3::Hasher;
+        let mut hasher = Hasher::new();
         hasher.update(
             format!(
                 "{}",
@@ -14,8 +13,6 @@ macro_rules! hash {
             )
             .as_bytes()
         );
-        let hashres: [u8;64] = hasher.finalize()
-        .as_slice().try_into().expect("Wrong Length");
-        crate::HashString::from_generic_array(hashres)
+        hasher.finalize()
     }};
 }
