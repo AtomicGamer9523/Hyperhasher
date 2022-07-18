@@ -1,6 +1,6 @@
 <!-- AUTHOR: "AtomicGamer9523"@github.com -->
 <!-- LICENSE: "MIT" -->
-<!-- FORMAT: "JSON" -->
+<!-- FORMAT: "README" -->
 
 # Hyper-Hasher
 
