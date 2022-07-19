@@ -1,7 +1,7 @@
 //AUTHOR: "AtomicGamer9523"@github.com
 //LICENSE: "MIT"
 //FORMAT: "RUST"
-//! A light-weight Blockchain library using [BLAKE2][1] for hashing.
+//! A light-weight Blockchain library using [BLAKE3][1] for hashing.
 //!
 //! # Usage:
 //!
@@ -24,8 +24,7 @@
 //!
 //! Also see [RustCrypto/hashes](https://github.com/RustCrypto/hashes) readme.
 //!
-//! [1]: https://en.wikipedia.org/wiki/BLAKE_(hash_function)#BLAKE2
-//! [2]: https://github.com/cesarb/blake2-rfc
+//! [1]: https://en.wikipedia.org/wiki/BLAKE_(hash_function)#BLAKE3
 #![doc(
     html_logo_url = "https://raw.githubusercontent.com/RustCrypto/media/6ee8e381/logo.svg",
     html_favicon_url = "https://raw.githubusercontent.com/RustCrypto/media/6ee8e381/logo.svg"
