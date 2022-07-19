@@ -38,6 +38,7 @@ mod blockchain;
 
 #[allow(unused_imports)]
 pub use blockchain::{
+    HashString,
     Block,
     Chain,
     IBD

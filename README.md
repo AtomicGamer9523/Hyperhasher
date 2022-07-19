@@ -23,7 +23,7 @@ use hyperhasher::{Block, Chain};
 
 fn main() {
     let mut chain = Chain::new();
-    let block = Block::new(String::from("DATA_FOR_THE_BLOCK"),&chain);
+    let block = Block::new("DATA_FOR_THE_BLOCK",&chain);
     chain.push(block);
 }
 ```

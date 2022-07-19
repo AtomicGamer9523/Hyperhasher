@@ -13,6 +13,6 @@ macro_rules! hash {
             )
             .as_bytes()
         );
-        hasher.finalize()
+        crate::HashString::from(hasher.finalize())
     }};
 }
